@@ -3,4 +3,27 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_white">#FFFFFF</color>
+    <color name="black">#BB000000</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="tm_white">#66FFFFFF</color>
+    <color name="black_line">#19000000</color>
+    <color name="background">#10000000</color>
+    <color name="pressed">#1C000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="carrot">#e67e22</color>
+    <color name="pumpkin">#d35400</color>
+    <color name="sumflower">#f1c40f</color>
+    <color name="orange">#f39c12</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="pomegranate">#c0392b</color>
+    <color name="turquoise">#1abc9c</color>
+    <color name="greensea">#16a085</color>
+
+    <color name="light_blue1">#29B6F6</color>
+    <color name="light_blue2">#03A9F4</color>
+    <color name="light_blue3">#039BE5</color>
+    <color name="nephritis">#27ae60</color>
+    <color name="blue">#2196F3</color>
 </resources>
