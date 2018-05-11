@@ -9,9 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Administrator on 2018/5/10.
- */
 
 public class GradeH extends Fragment {
     private View view;

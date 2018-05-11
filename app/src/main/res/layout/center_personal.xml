@@ -10,9 +10,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@color/bg_white"
+            >
+
+            <Button
+                android:id="@+id/cp_btn_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+
+                />
+        </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/me_ly_tx"
+            android:id="@+id/cp_ly_tx"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:paddingRight="15dp"
@@ -24,7 +51,7 @@
             >
 
             <ImageView
-                android:id="@+id/me_img_tx"
+                android:id="@+id/cp_img_tx"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@mipmap/ic_launcher"
@@ -34,21 +61,21 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_toRightOf="@+id/me_img_tx"
+                android:layout_toRightOf="@+id/cp_img_tx"
                 android:paddingLeft="10dp"
                 android:layout_centerInParent="true"
                 android:gravity="center_vertical"
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:id="@+id/me_txt_tx"
+                    android:id="@+id/cp_txt_tx"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/black"
                     />
                 <TextView
-                    android:id="@+id/me_txt_tx2"
+                    android:id="@+id/cp_txt_tx2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
@@ -77,7 +104,7 @@
             />
 
         <RelativeLayout
-            android:id="@+id/me_ly_xm"
+            android:id="@+id/cp_ly_xm"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:paddingRight="15dp"
@@ -98,16 +125,16 @@
                 />
 
             <TextView
-                android:id="@+id/me_txt_xm"
+                android:id="@+id/cp_txt_xm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:layout_toLeftOf="@+id/me_img_xm"
+                android:layout_toLeftOf="@+id/cp_img_xm"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="5dp"
                 />
             <ImageView
-                android:id="@+id/me_img_xm"
+                android:id="@+id/cp_img_xm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -124,7 +151,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/me_ly_xb"
+            android:id="@+id/cp_ly_xb"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:paddingRight="15dp"
@@ -144,16 +171,16 @@
                 />
 
             <TextView
-                android:id="@+id/me_txt_xb"
+                android:id="@+id/cp_txt_xb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:layout_toLeftOf="@+id/me_img_xb"
+                android:layout_toLeftOf="@+id/cp_img_xb"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="5dp"
                 />
             <ImageView
-                android:id="@+id/me_img_xb"
+                android:id="@+id/cp_img_xb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -171,7 +198,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/me_ly_tz"
+            android:id="@+id/cp_ly_sj"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:paddingRight="15dp"
@@ -191,16 +218,16 @@
                 />
 
             <TextView
-                android:id="@+id/me_txt_tz"
+                android:id="@+id/cp_txt_sj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:layout_toLeftOf="@+id/me_img_tz"
+                android:layout_toLeftOf="@+id/cp_img_sj"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="5dp"
                 />
             <ImageView
-                android:id="@+id/me_img_tz"
+                android:id="@+id/cp_img_sj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -218,7 +245,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/me_ly_yx"
+            android:id="@+id/cp_ly_yx"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:paddingRight="15dp"
@@ -238,16 +265,16 @@
                 />
 
             <TextView
-                android:id="@+id/me_txt_yx"
+                android:id="@+id/cp_txt_yx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:layout_toLeftOf="@+id/me_img_yx"
+                android:layout_toLeftOf="@+id/cp_img_yx"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="5dp"
                 />
             <ImageView
-                android:id="@+id/me_img_yx"
+                android:id="@+id/cp_img_yx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -265,7 +292,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/me_ly_qq"
+            android:id="@+id/cp_ly_qq"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:paddingRight="15dp"
@@ -285,16 +312,16 @@
                 />
 
             <TextView
-                android:id="@+id/me_txt_qq"
+                android:id="@+id/cp_txt_qq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:layout_toLeftOf="@+id/me_img_qq"
+                android:layout_toLeftOf="@+id/cp_img_qq"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="5dp"
                 />
             <ImageView
-                android:id="@+id/me_img_qq"
+                android:id="@+id/cp_img_qq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -305,8 +332,8 @@
 
         </RelativeLayout>
 
-        <!--<RelativeLayout
-            android:id="@+id/me_ly_sz"
+        <RelativeLayout
+            android:id="@+id/cp_ly_tc"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:paddingRight="15dp"
@@ -317,18 +344,18 @@
             android:focusable="true"
             >
             <TextView
-                android:id="@+id/me_txt_sz"
+                android:id="@+id/cp_txt_tc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
-                android:text="设置"
+                android:text="退出登录"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 />
 
             <ImageView
-                android:id="@+id/me_img_sz"
+                android:id="@+id/cp_img_tc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -337,7 +364,7 @@
                 />
 
 
-        </RelativeLayout>-->
+        </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>

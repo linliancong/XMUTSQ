@@ -18,6 +18,82 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PersonalCenter">
+            <intent-filter>
+                <action android:name="android.intent.action.PERSONALCENTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPasswd">
+            <intent-filter>
+                <action android:name="android.intent.action.RESETPASSWD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpdateInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.UPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NoticeInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.NOTICEINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddNotice">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDNOTICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BookInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOKINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- 更新广播 -->
+        <receiver android:name=".PersonalCenter$MyBroad">
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MainActivity$MyBroad">
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD2"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".NoticeH$MyBroad">
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD3"/>
+            </intent-filter>
+        </receiver>
+
 
         <!-- 实时通信模块、推送（均需要加入以下声明） START -->
         <!-- 实时通信模块、推送都要使用 PushService -->

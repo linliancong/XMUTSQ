@@ -3,11 +3,6 @@ package com.example.administrator.ut;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by Administrator on 2017/3/25.
- * 常用信息工具类
- */
-
 public class SharedPUT {
     private SharedPreferences sp;
     private SharedPreferences.Editor editor;
@@ -57,19 +52,23 @@ public class SharedPUT {
         editor.commit();
     }
 
-
-    public float getWeight()
+    public String getPWD()
     {
-        return sp.getFloat("Weight",0);
+        return sp.getString("PWD","");
     }
 
-    //用户体重
-    public void setWeight(float Weight){
-        editor.putFloat("Weight",Weight);
+
+    //用户角色
+    public void setRole(String Role){
+        editor.putString("Role",Role);
         editor.commit();
     }
+    public String getRole()
+    {
+        return sp.getString("Role","");
+    }
 
-    //用户头像URL
+    //用户头像
     public void setImage(String Image){
         editor.putString("Image",Image);
         editor.commit();
@@ -80,45 +79,6 @@ public class SharedPUT {
         return sp.getString("Image","");
     }
 
-    //用户推送的ID
-    public void setInstallationId(String InstallationId){
-        editor.putString("InstallationId",InstallationId);
-        editor.commit();
-    }
-
-    public String getInstallationId()
-    {
-        return sp.getString("InstallationId","");
-    }
-
-    //用户推送的时间
-    public void setDate(String Date){
-        editor.putString("Date",Date);
-        editor.commit();
-    }
-
-    public String getDate()
-    {
-        return sp.getString("Date","");
-    }
-
-    //今天是否推送
-    public void setIsSend(boolean IsSend){
-        editor.putBoolean("IsSend",IsSend);
-        editor.commit();
-    }
-
-    public boolean getIsSend()
-    {
-        return sp.getBoolean("IsSend",false);
-    }
-
-
-
-    public String getPWD()
-    {
-        return sp.getString("PWD","");
-    }
 
     // 是否第一次运行
     public void setIsFirst(boolean isFirst) {

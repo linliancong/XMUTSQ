@@ -11,18 +11,13 @@ import com.example.administrator.xmutsq.GradeH;
 import com.example.administrator.xmutsq.LostAndFoundH;
 import com.example.administrator.xmutsq.NoticeH;
 
-
-/**
- * Created by Administrator on 2017/11/29.
- */
-
 public class FragmentAdapter extends FragmentPagerAdapter {
 
-    private final int PAGER_COUNT=4;
-    private final int PAGER_1=0;
-    private final int PAGER_2=1;
-    private final int PAGER_3=2;
-    private final int PAGER_4=3;
+    private final int PC =4;
+    private final int P1 =0;
+    private final int P2 =1;
+    private final int P3 =2;
+    private final int P4 =3;
 
     private Context context;
 
@@ -49,17 +44,17 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         Fragment fragment=null;
         switch (position)
         {
-            case PAGER_1:
-                fragment=lostAndFoundH;
+            case P1:
+                fragment= noticeH;
                 break;
-            case PAGER_2:
+            case P2:
                 fragment= bookH;
                 break;
-            case PAGER_3:
+            case P3:
                 fragment= gradeH;
                 break;
-            case PAGER_4:
-                fragment= noticeH;
+            case P4:
+                fragment=lostAndFoundH;
                 break;
         }
         return fragment;
@@ -67,7 +62,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return PAGER_COUNT;
+        return PC;
     }
 
     @Override

@@ -10,11 +10,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
-/**
- * Created by Administrator on 2018/1/23.
- * 设置全局APP工具类
- */
-
 public abstract class StatusBarUT extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

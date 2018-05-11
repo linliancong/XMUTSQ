@@ -6,10 +6,6 @@ import android.os.Build;
 import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.PushService;
 
-/**
- * Created by Administrator on 2018/3/28.
- */
-
 public class MyLeanCloudApp extends Application {
 
     @Override

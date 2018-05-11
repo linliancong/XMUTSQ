@@ -1,38 +1,35 @@
 package com.example.administrator.xmutsq;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
+import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVObject;
-import com.avos.avoscloud.SaveCallback;
 import com.example.administrator.ut.FragmentAdapter;
 import com.example.administrator.ut.SharedPUT;
 import com.example.administrator.ut.StatusBarUT;
 
+import java.io.File;
 
-/**
- * Created by Administrator on 2017/3/16.
- */
-
-public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedChangeListener,ViewPager.OnPageChangeListener{
+public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedChangeListener,ViewPager.OnPageChangeListener,View.OnClickListener{
 
     public static final int PAG_ONE=0;
     public static final int PAG_TWO=1;
     public static final int PAG_THREE=2;
     public static final int PAG_FOUR=3;
+    private int page=0;
 
     private RadioGroup rg_tab_bar;
     private RadioButton rb_home;
@@ -40,12 +37,13 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
     private RadioButton rb_interact;
     private RadioButton rb_me;
     private ImageView image;
+    private ImageView edit;
 
 
-    private View view_home;
-    private View view_plan;
-    private View view_interact;
-    private View view_me;
+    private View view_notice;
+    private View view_book;
+    private View view_grade;
+    private View view_lost;
 
     private ViewPager vpager;
     private FragmentAdapter mAdapter=null;
@@ -54,8 +52,32 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
     private long mTime=0;
     private Context context;
     private SharedPUT sp;
-    //private SQLOperator op;
 
+    //广播通知主线程更新
+    private static boolean state=false;
+    private PersonalCenter.MyBroad broad;
+
+
+    Handler handler=new Handler(){
+        @Override
+        public void handleMessage(android.os.Message msg) {
+            switch (msg.what) {
+                case 0x001:
+                    if(sp.getIsLogin()){
+                        readBitmap();
+                        if(sp.getRole().equals("0")){
+                            edit.setVisibility(View.VISIBLE);
+                        }else {
+                            edit.setVisibility(View.GONE);
+                        }
+                    }else {
+                        image.setImageResource(R.mipmap.ic_launcher_round);
+                        edit.setVisibility(View.GONE);
+                    }
+                    break;
+            }
+        }
+    };
 
 
     @Override
@@ -64,6 +86,43 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         //setContentView(R.layout.activity_main);
         context=getApplicationContext();
         sp=new SharedPUT(context);
+
+        //初始化
+        image=findViewById(R.id.image);
+        edit=findViewById(R.id.edit);
+        image.setOnClickListener(this);
+        edit.setOnClickListener(this);
+        mAdapter=new FragmentAdapter(getSupportFragmentManager(),MainActivity.this);
+        init();
+        rb_home.setChecked(true);
+
+        if(sp.getIsLogin()){
+            readBitmap();
+            if(sp.getRole().equals("0")){
+                edit.setVisibility(View.VISIBLE);
+            }else {
+                edit.setVisibility(View.GONE);
+            }
+        }
+
+        //广播更新
+        broad=new PersonalCenter.MyBroad();
+        IntentFilter filter=new IntentFilter();
+        filter.addAction("com.example.administrator.MYBROAD");
+        registerReceiver(broad,filter);
+
+        new Thread(){
+            @Override
+            public void run() {
+                while (true)
+                {
+                    if(state) {
+                        state=false;
+                        handler.sendEmptyMessage(0x001);
+                    }
+                }
+            }
+        }.start();
 
         //以下为初始化各个表
         /**
@@ -77,6 +136,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
          * Email：邮箱
          * QQ：qq号
          * ImageUrl：头像
+         * Role：角色（0、管理员，1、普通用户）
          * Remark：备注
          * */
         /*AVObject testObject = new AVObject("UserInfo");
@@ -88,6 +148,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         testObject.put("Email","");
         testObject.put("QQ", "");
         testObject.put("ImageUrl","");
+        testObject.put("Role","");
         testObject.put("Remark","");
         testObject.saveInBackground(new SaveCallback() {
             @Override
@@ -261,18 +322,6 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
             }
         });*/
 
-
-        image=findViewById(R.id.image);
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent();
-            }
-        });
-        mAdapter=new FragmentAdapter(getSupportFragmentManager(),MainActivity.this);
-        bindView();
-        rb_home.setChecked(true);
-
     }
 
     @Override
@@ -280,21 +329,21 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         return R.layout.activity_main;
     }
 
-    public void bindView() {
+    public void init() {
         //设置菜单上方的区块
-        view_home=findViewById(R.id.view_home);
-        view_plan =findViewById(R.id.view_plan);
-        view_interact =findViewById(R.id.view_interact);
-        view_me=findViewById(R.id.view_me);
+        view_notice =findViewById(R.id.view_home);
+        view_book =findViewById(R.id.view_plan);
+        view_grade =findViewById(R.id.view_interact);
+        view_lost =findViewById(R.id.view_me);
 
         //按钮
         rg_tab_bar=  findViewById(R.id.rg_tab_bar);
         rg_tab_bar.setOnCheckedChangeListener(this);
         //获取第一个按钮，并设置其状态为选中
-        rb_home= findViewById(R.id.rb_home);
-        rb_plan = findViewById(R.id.rb_plan);
-        rb_interact = findViewById(R.id.rb_interact);
-        rb_me= findViewById(R.id.rb_me);
+        rb_home= findViewById(R.id.rb_notice);
+        rb_plan = findViewById(R.id.rb_book);
+        rb_interact = findViewById(R.id.rb_grade);
+        rb_me= findViewById(R.id.rb_lost);
 
         //viewPager相关的设置
         vpager= findViewById(R.id.vpager);
@@ -305,35 +354,39 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId){
-            case R.id.rb_home:
+            case R.id.rb_notice:
                 setSelected();
-                view_home.setSelected(true);
+                view_notice.setSelected(true);
                 vpager.setCurrentItem(PAG_ONE);
+                page=PAG_ONE;
                 break;
-            case R.id.rb_plan:
+            case R.id.rb_book:
                 setSelected();
-                view_plan.setSelected(true);
+                view_book.setSelected(true);
                 vpager.setCurrentItem(PAG_TWO);
+                page=PAG_TWO;
                 break;
-            case R.id.rb_interact:
+            case R.id.rb_grade:
                 setSelected();
-                view_interact.setSelected(true);
+                view_grade.setSelected(true);
                 vpager.setCurrentItem(PAG_THREE);
+                page=PAG_THREE;
                 break;
-            case R.id.rb_me:
+            case R.id.rb_lost:
                 setSelected();
-                view_me.setSelected(true);
+                view_lost.setSelected(true);
                 vpager.setCurrentItem(PAG_FOUR);
+                page=PAG_FOUR;
                 break;
             default:break;
         }
     }
 
     public void setSelected(){
-        view_home.setSelected(false);
-        view_plan.setSelected(false);
-        view_me.setSelected(false);
-        view_interact.setSelected(false);
+        view_notice.setSelected(false);
+        view_book.setSelected(false);
+        view_lost.setSelected(false);
+        view_grade.setSelected(false);
 
     }
 
@@ -401,6 +454,81 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
     @Override
     protected void onResume() {
         super.onResume();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.image:
+                Intent intent=new Intent(context,PersonalCenter.class);
+                startActivity(intent);
+                break;
+                //针对管理员的跳转界面
+            case R.id.edit:
+                switch (page){
+                    //校园公告
+                    case PAG_ONE:
+                        Intent it1=new Intent(context,AddNotice.class);
+                        startActivity(it1);
+                        break;
+                    //图书信息
+                    case PAG_TWO:
+                        Intent it2=new Intent(context,PersonalCenter.class);
+                        startActivity(it2);
+                        break;
+                    //成绩查询
+                    case PAG_THREE:
+                        Intent it3=new Intent(context,PersonalCenter.class);
+                        startActivity(it3);
+                        break;
+                    //失物招领
+                    case PAG_FOUR:
+                        Intent it4=new Intent(context,PersonalCenter.class);
+                        startActivity(it4);
+                        break;
+                }
+                break;
+        }
+    }
+
+    public static class MyBroad extends BroadcastReceiver {
+        public final String board="com.example.administrator.MYBROAD2";
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if(intent.getAction().equals(board)){
+                state=true;
+
+            }
+        }
+    }
+
+
+    /**
+     * 读取图片
+     * */
+    private boolean readBitmap() {
+        File filesDir;
+        if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){//判断sd卡是否挂载
+            filesDir = context.getExternalFilesDir("");
+        }else{//手机内部存储
+            filesDir = context.getFilesDir();
+        }
+        File file = new File(filesDir,sp.getID()+".png");
+        if(file.exists()){
+            Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+
+            image.setImageBitmap(bitmap);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (broad != null) {
+            unregisterReceiver(broad);
+        }
     }
 
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@color/bg_white"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/cp_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="15dp"
+                android:clickable="false"
+                android:focusable="false"
+                />
+            <TextView
+                android:id="@+id/cp_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更改"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cp_btn_update"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:background="@drawable/t_btn"
+            android:text="保存"
+            android:textColor="@color/bg_white"
+            android:textSize="12sp"
+            android:enabled="false"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/div_white"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/cp_txt_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/line"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
