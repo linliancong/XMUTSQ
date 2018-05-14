@@ -1,20 +1,24 @@
 package com.example.administrator.xmutsq;
 
+import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
-import android.util.Log;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVFile;
@@ -31,7 +35,7 @@ import java.io.IOException;
  * Created by Administrator on 2018/3/13.
  */
 
-public class AddBook extends StatusBarUT implements View.OnClickListener{
+public class AddBook extends StatusBarUT implements View.OnClickListener,TextWatcher{
 
     private LinearLayout back;
     private ImageView img;
@@ -40,10 +44,11 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
     private TextView isbn;
     private TextView publisher;
     private TextView num;
-    private TextView states;
+    private TextView price;
     private TextView summary;
 
     private Button image_btn;
+    private Button add;
 
     private SharedPUT sp;
     private Context context;
@@ -53,6 +58,8 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
     private static final int CODE_RESULT_REQUEST=3;
 
     private int state=1;
+    private String path="";
+    private String imgurl="";
 
 
     @Override
@@ -80,13 +87,23 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
         isbn=findViewById(R.id.isbn);
         publisher=findViewById(R.id.publisher);
         num =findViewById(R.id.num);
-        states =findViewById(R.id.state);
+        price =findViewById(R.id.price);
         summary=findViewById(R.id.summary);
 
         image_btn=findViewById(R.id.image_btn);
+        add=findViewById(R.id.add);
 
         back.setOnClickListener(this);
         image_btn.setOnClickListener(this);
+        add.setOnClickListener(this);
+
+        bookname.addTextChangedListener(this);
+        author.addTextChangedListener(this);
+        isbn.addTextChangedListener(this);
+        publisher.addTextChangedListener(this);
+        num.addTextChangedListener(this);
+        price.addTextChangedListener(this);
+        summary.addTextChangedListener(this);
 
 
     }
@@ -101,6 +118,9 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
                 Intent intent = new Intent(Intent.ACTION_PICK);
                 intent.setType("image/*");
                 startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);
+                break;
+            case R.id.add:
+                upLoadBitmap(path);
                 break;
         }
 
@@ -132,7 +152,7 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
         try {
             Bitmap photo= MediaStore.Images.Media.getBitmap(resolver, intent.getData());
             img.setImageBitmap(photo);
-            saveBitmap(photo,true);
+            saveBitmap(photo);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -142,7 +162,7 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
     /**
      * 保存图片
      */
-    private void saveBitmap(Bitmap bitmap, boolean isUP) {
+    private void saveBitmap(Bitmap bitmap) {
         File filesDir;
         if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){//判断sd卡是否挂载
             //路径1：storage/sdcard/Android/data/包名/files
@@ -156,9 +176,7 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
             File file = new File(filesDir,isbn.getText().toString()+".png");
             fos = new FileOutputStream(file);
             bitmap.compress(Bitmap.CompressFormat.PNG, 100,fos);
-            if(isUP) {
-                upLoadBitmap(file.getAbsolutePath().toString());
-            }
+            path=file.getAbsolutePath().toString();
         } catch (Exception e) {
             e.printStackTrace();
         }finally{
@@ -173,7 +191,7 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
     }
 
     /**
-     * 上传图片
+     * 上传图片,
      * */
     public void upLoadBitmap(String path){
         try {
@@ -181,12 +199,9 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
             file.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(AVException e) {
-                    //sp.setImage(file.getUrl());
-                    // 第一参数是 className,第二个参数是 objectId
-                    AVObject testObject1 = AVObject.createWithoutData("UserInfo", sp.getID());
-                    testObject1.put("ImageUrl", file.getUrl());
-                    // 保存到云端
-                    testObject1.saveInBackground();
+                    //把图片的路径保存下来
+                    imgurl=file.getUrl();
+                    setData();
                 }
             });
         }catch (Exception e){
@@ -195,4 +210,58 @@ public class AddBook extends StatusBarUT implements View.OnClickListener{
 
     }
 
+
+    /**
+     * 保存图书信息
+     * */
+    public void setData(){
+        AVObject testObject = new AVObject("Book");
+        testObject.put("ISBN",isbn.getText().toString());
+        testObject.put("BookName", bookname.getText().toString());
+        testObject.put("Author",author.getText().toString());
+        testObject.put("Publisher", publisher.getText().toString());
+        testObject.put("Tag", "");
+        testObject.put("ImgPath",imgurl);
+        testObject.put("Price", price.getText().toString());
+        testObject.put("Num",num.getText().toString());
+        testObject.put("Summary",summary.getText().toString());
+        testObject.put("Remark","");
+        testObject.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(AVException e) {
+                if(e == null){
+                    Toast.makeText(context, "新增成功", Toast.LENGTH_SHORT).show();
+                    if(Build.VERSION.SDK_INT<Build.VERSION_CODES.O){
+                        sendBroadcast(new Intent("com.example.administrator.MYBROAD4"));
+                    }
+                    else {
+                        sendBroadcast(new Intent("com.example.administrator.MYBROAD4").setComponent(new ComponentName("com.example.administrator.xmutsq", "com.example.administrator.xmutsq.BookH$MyBroad")));
+                    }
+                    finish();
+                }else{
+                    Toast.makeText(context, "新增失败，请稍后重试", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        add.setEnabled(false);
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        if(bookname.getText().toString().length()>0&&author.getText().toString().length()>0&&isbn.getText().toString().length()>0
+                &&price.getText().toString().length()>0&&publisher.getText().toString().length()>0&&num.getText().toString().length()>0
+                &&summary.getText().toString().length()>0){
+            add.setEnabled(true);
+        }
+
+    }
 }

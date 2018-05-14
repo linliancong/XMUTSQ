@@ -82,7 +82,7 @@ public class BookInfo extends StatusBarUT implements View.OnClickListener {
         bookname.setText(book.get(0).getBookname());
         author.setText(book.get(0).getAuthor());
         publisher.setText(book.get(0).getPublisher());
-        num.setText(book.get(0).getPrice());
+        num.setText(book.get(0).getNum());
         summary.setText(book.get(0).getSummary());
 
         //从服务器中获取书本借阅数据

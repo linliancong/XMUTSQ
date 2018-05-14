@@ -17,6 +17,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.avos.avoscloud.AVException;
@@ -33,6 +36,7 @@ import com.example.administrator.ut.SharedPUT;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -46,17 +50,33 @@ public class BookH extends Fragment {
     private Book book;
     private ArrayList<Book> books;
     private ListView list;
+    private LinearLayout visible;
+    private Button search;
+    private EditText bookname;
 
     //广播通知主线程更新
     private static boolean state=false;
     private PersonalCenter.MyBroad broad;
+
+    private int ii=0;
 
     Handler handler=new Handler(){
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case 0x001:
+                    list.setVisibility(View.VISIBLE);
+                    visible.setVisibility(View.GONE);
+                    break;
+                case 0x002:
+                    list.setVisibility(View.GONE);
+                    visible.setVisibility(View.VISIBLE);
+                    break;
+                case 0x003:
                     getData();
+                    break;
+                case 0x004:
+                    setAdapter();
                     break;
             }
         }
@@ -74,6 +94,20 @@ public class BookH extends Fragment {
             sp=new SharedPUT(context);
             view=inflater.inflate(R.layout.home_book,container,false);
             list=view.findViewById(R.id.list);
+            visible=view.findViewById(R.id.visible);
+            search=view.findViewById(R.id.search);
+            bookname=view.findViewById(R.id.bookname);
+
+            search.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(bookname.getText().toString().length()==0){
+                        getData();
+                    }else {
+                        getSearchData();
+                    }
+                }
+            });
 
             //广播更新
             broad=new PersonalCenter.MyBroad();
@@ -88,7 +122,7 @@ public class BookH extends Fragment {
                     {
                         if(state) {
                             state=false;
-                            handler.sendEmptyMessage(0x001);
+                            handler.sendEmptyMessage(0x003);
                         }
                     }
                 }
@@ -100,6 +134,9 @@ public class BookH extends Fragment {
         return view;
     }
 
+    /**
+     * 获取全部图书
+    * */
     public void  getData(){
         //从服务器中获取数据
         AVQuery<AVObject> query = new AVQuery<>("Book");
@@ -107,14 +144,15 @@ public class BookH extends Fragment {
             @Override
             public void done(List<AVObject> list, AVException e) {
                 if(list.size()>0) {
+                    handler.sendEmptyMessage(0x001);
                     books =new ArrayList<>();
                     for (int i = 0; i < list.size(); i++) {
                         book = new Book();
-                        book.setBookname(list.get(i).get("Bookname").toString());
+                        book.setBookname(list.get(i).get("BookName").toString());
                         book.setAuthor(list.get(i).get("Author").toString());
                         book.setIsbn(list.get(i).get("ISBN").toString());
                         book.setSummary(list.get(i).get("Summary").toString());
-                        book.setImagepath(list.get(i).get("Imgpath").toString());
+                        book.setImagepath(list.get(i).get("ImgPath").toString());
                         book.setPublisher(list.get(i).get("Publisher").toString());
                         book.setPrice(list.get(i).get("Price").toString());
                         book.setTag(list.get(i).get("Tag").toString());
@@ -123,14 +161,98 @@ public class BookH extends Fragment {
                         books.add(book);
                     }
                     setAdapter();
+                }else {
+                    handler.sendEmptyMessage(0x002);
                 }
 
             }
         });
     }
 
+    /**
+     * 按条件查询图书
+     * */
+    public void  getSearchData(){
+        //从服务器中获取数据
+        if(!bookname.getText().toString().equals("我的")) {
+            AVQuery<AVObject> query = new AVQuery<>("Book");
+            query.whereEqualTo("BookName",bookname.getText().toString());
+            query.findInBackground(new FindCallback<AVObject>() {
+                @Override
+                public void done(List<AVObject> list, AVException e) {
+                    if (list.size() > 0) {
+                        handler.sendEmptyMessage(0x001);
+                        books = new ArrayList<>();
+                        for (int i = 0; i < list.size(); i++) {
+                            book = new Book();
+                            book.setBookname(list.get(i).get("BookName").toString());
+                            book.setAuthor(list.get(i).get("Author").toString());
+                            book.setIsbn(list.get(i).get("ISBN").toString());
+                            book.setSummary(list.get(i).get("Summary").toString());
+                            book.setImagepath(list.get(i).get("ImgPath").toString());
+                            book.setPublisher(list.get(i).get("Publisher").toString());
+                            book.setPrice(list.get(i).get("Price").toString());
+                            book.setTag(list.get(i).get("Tag").toString());
+                            book.setNum(list.get(i).get("Num").toString());
+
+                            books.add(book);
+                        }
+                        setAdapter();
+                    } else {
+                        handler.sendEmptyMessage(0x002);
+                    }
+
+                }
+            });
+        }else{
+            AVQuery<AVObject> query = new AVQuery<>("BookBorrow");
+            query.whereEqualTo("UserID",sp.getID());
+            query.findInBackground(new FindCallback<AVObject>() {
+                @Override
+                public void done(List<AVObject> list, AVException e) {
+                    if(list.size() > 0) {
+                        ii=list.size();
+                        for(int i = 0; i < list.size(); i++) {
+                            AVQuery<AVObject> query = new AVQuery<>("Book");
+                            query.whereEqualTo("ISBN", list.get(i).get("ISBN").toString());
+                            query.findInBackground(new FindCallback<AVObject>() {
+                                @Override
+                                public void done(List<AVObject> list, AVException e) {
+                                    if (list.size() > 0) {
+                                        handler.sendEmptyMessage(0x001);
+                                        books = new ArrayList<>();
+                                        book = new Book();
+                                        book.setBookname(list.get(0).get("BookName").toString());
+                                        book.setAuthor(list.get(0).get("Author").toString());
+                                        book.setIsbn(list.get(0).get("ISBN").toString());
+                                        book.setSummary(list.get(0).get("Summary").toString());
+                                        book.setImagepath(list.get(0).get("ImgPath").toString());
+                                        book.setPublisher(list.get(0).get("Publisher").toString());
+                                        book.setPrice(list.get(0).get("Price").toString());
+                                        book.setTag(list.get(0).get("Tag").toString());
+                                        book.setNum(list.get(0).get("Num").toString());
+                                        books.add(book);
+                                        if(books.size()==ii) {
+                                            handler.sendEmptyMessage(0x004);
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    }else {
+                        handler.sendEmptyMessage(0x002);
+                    }
+
+
+
+                }
+            });
+
+        }
+    }
+
     private void setAdapter() {
-        adapter=new AdapterUT<Book>(books, R.layout.home_notice_item) {
+        adapter=new AdapterUT<Book>(books, R.layout.home_book_item) {
             @Override
             public void bindView(ViewHolder holder, Book obj) {
                 holder.setText(R.id.bookname,obj.getBookname());

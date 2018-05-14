@@ -108,6 +108,7 @@ public class NoticeH extends Fragment {
                     noticeList=new ArrayList<>();
                     for (int i = 0; i < list.size(); i++) {
                         notice = new Notice();
+                        notice.setNoticeID(list.get(i).getObjectId().toLowerCase());
                         notice.setTitle(list.get(i).get("Title").toString());
                         notice.setContent(list.get(i).get("Content").toString());
                         notice.setDate(list.get(i).get("Date").toString());

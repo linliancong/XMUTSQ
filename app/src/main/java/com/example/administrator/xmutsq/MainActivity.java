@@ -194,6 +194,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
          * 表名：BookBorrow（借阅信息表）
          * 以下为各个字段
          * ISBN：ISBN
+         * BookName：图书名
          * UserID：用户编号
          * State：借阅状态（1、预约中，2、借阅中，3、已归还）
          * Date：借阅时间
@@ -201,6 +202,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
          * */
         /*testObject = new AVObject("BookBorrow");
         testObject.put("ISBN","");
+        testObject.put("BookName", "");
         testObject.put("UserID", "");
         testObject.put("State","");
         testObject.put("Date", "");
@@ -237,6 +239,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
          * 以下为各个字段
          * NoticeID：公告ID
          * UserID：用户ID
+         * UserName：用户名
          * Content：内容
          * Date：留言时间
          * Remark：备注
@@ -244,6 +247,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         /*testObject = new AVObject("Message");
         testObject.put("NoticeID","");
         testObject.put("UserID", "");
+        testObject.put("UserName","");
         testObject.put("Date","");
         testObject.put("Content", "");
         testObject.put("Remark","");
@@ -473,7 +477,7 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
                         break;
                     //图书信息
                     case PAG_TWO:
-                        Intent it2=new Intent(context,PersonalCenter.class);
+                        Intent it2=new Intent(context,AddBook.class);
                         startActivity(it2);
                         break;
                     //成绩查询

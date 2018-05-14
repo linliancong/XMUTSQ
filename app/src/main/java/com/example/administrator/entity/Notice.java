@@ -7,6 +7,7 @@ public class Notice implements Serializable {
     private String title;
     private String content;
     private String date;
+    private String noticeID;
 
     public String getContent() {
         return content;
@@ -30,5 +31,13 @@ public class Notice implements Serializable {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getNoticeID() {
+        return noticeID;
+    }
+
+    public void setNoticeID(String noticeID) {
+        this.noticeID = noticeID;
     }
 }

@@ -74,6 +74,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddBook">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDBOOK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
 
@@ -91,6 +98,11 @@
         <receiver android:name=".NoticeH$MyBroad">
             <intent-filter>
                 <action android:name="com.example.administrator.MYBROAD3"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BookH$MyBroad">
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD4"/>
             </intent-filter>
         </receiver>
 
