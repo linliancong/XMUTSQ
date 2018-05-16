@@ -95,6 +95,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".LostAndFoundS">
+            <intent-filter>
+                <action android:name="android.intent.action.LOSTANDFOUNDS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".LostAndFoundInfo">
             <intent-filter>
                 <action android:name="android.intent.action.LOSTANDFOUNDINFO" />
@@ -150,7 +157,7 @@
                 <action android:name="com.example.administrator.MYBROAD4"/>
             </intent-filter>
         </receiver>
-        <receiver android:name=".LostAndFoundH$MyBroad">
+        <receiver android:name=".LostAndFoundS$MyBroad">
             <intent-filter>
                 <action android:name="com.example.administrator.MYBROAD5"/>
             </intent-filter>

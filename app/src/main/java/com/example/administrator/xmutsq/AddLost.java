@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.AnimationDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.avos.avoscloud.AVException;
@@ -63,6 +65,12 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
     private Uri path2;
     private String imgurl="";
 
+    private Bitmap bitmap;
+
+    private RelativeLayout sche_rl;
+    private ImageView sche_img;
+    private AnimationDrawable anima;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -77,6 +85,10 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
         content=findViewById(R.id.content);
         phone=findViewById(R.id.phone);
         image=findViewById(R.id.image);
+
+        sche_rl=findViewById(R.id.sche_rl);
+        sche_img=findViewById(R.id.sche_img);
+        anima= (AnimationDrawable) sche_img.getDrawable();
 
         title.addTextChangedListener(this);
         content.addTextChangedListener(this);
@@ -101,7 +113,8 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
                 finish();
                 break;
             case R.id.send:
-                setData();
+                sche_rl.setVisibility(View.VISIBLE);
+                anima.start();
                 upLoadBitmap(path);
                 break;
             case R.id.image:
@@ -160,7 +173,7 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
         File file;
         if (type == TYPE_TAKE_PHOTO) {
             file = new File(filesDir,TimeUT.getCurrentDate2()+".png");
-            //path=file.getAbsolutePath().toString();
+            path=file.getAbsolutePath().toString();
         } else {
             return null;
         }
@@ -177,12 +190,12 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
                // if (resultCode == RESULT_OK) {
                     if (data != null) {
                         if (data.hasExtra("data")) {
-                            Bitmap bitmap = data.getParcelableExtra("data");
+                            bitmap = data.getParcelableExtra("data");
                             image.setImageBitmap(bitmap);//imageView即为当前页面需要展示照片的控件，可替换
                         }
                     } else {
                         if (Build.VERSION.SDK_INT >= 24){
-                            Bitmap bitmap = null;
+                            bitmap = null;
                             try {
                                 bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(path2));
                             } catch (FileNotFoundException e) {
@@ -190,7 +203,7 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
                             }
                             image.setImageBitmap(bitmap);
                         }else {
-                            Bitmap bitmap = BitmapFactory.decodeFile(path);
+                            bitmap = BitmapFactory.decodeFile(path);
                             image.setImageBitmap(bitmap);//imageView即为当前页面需要展示照片的控件，可替换
                         }
                     }
@@ -216,14 +229,16 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
         testObject.saveInBackground(new SaveCallback() {
             @Override
             public void done(AVException e) {
+                sche_rl.setVisibility(View.GONE);
+                anima.stop();
                 if(e == null){
                     Toast.makeText(context, "发布成功", Toast.LENGTH_SHORT).show();
-                    if(Build.VERSION.SDK_INT<Build.VERSION_CODES.O){
+                    /*if(Build.VERSION.SDK_INT<Build.VERSION_CODES.O){
                         sendBroadcast(new Intent("com.example.administrator.MYBROAD5"));
                     }
                     else {
-                        sendBroadcast(new Intent("com.example.administrator.MYBROAD5").setComponent(new ComponentName("com.example.administrator.xmutsq", "com.example.administrator.xmutsq.LostAndFoundH$MyBroad")));
-                    }
+                        sendBroadcast(new Intent("com.example.administrator.MYBROAD5").setComponent(new ComponentName("com.example.administrator.xmutsq", "com.example.administrator.xmutsq.LostAndFoundS$MyBroad")));
+                    }*/
                     finish();
                 }else{
                     Toast.makeText(context, "发布失败，请稍后重试", Toast.LENGTH_SHORT).show();
@@ -269,7 +284,12 @@ public class AddLost extends StatusBarUT implements View.OnClickListener,TextWat
      * */
     public void upLoadBitmap(String path){
         try {
-            final AVFile file = AVFile.withAbsoluteLocalPath(TimeUT.getCurrentDate2()+".png", path);
+            //压缩图片
+            File file1 = new File(path);
+            FileOutputStream fos = new FileOutputStream(file1);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 10,fos);
+
+            final AVFile file = AVFile.withAbsoluteLocalPath(TimeUT.getCurrentDate2()+".jpg", file1.toString());
             file.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(AVException e) {

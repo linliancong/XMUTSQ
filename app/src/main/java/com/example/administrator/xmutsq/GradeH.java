@@ -4,12 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,14 +67,15 @@ public class GradeH extends Fragment implements View.OnClickListener{
         mTerm.add("2");
         mTerm.add("3");
 
-        mYear.add("2010-2011");
-        mYear.add("2011-2012");
-        mYear.add("2012-2013");
-        mYear.add("2013-2014");
-        mYear.add("2014-2015");
-        mYear.add("2015-2016");
-        mYear.add("2016-2017");
         mYear.add("2017-2018");
+        mYear.add("2016-2017");
+        mYear.add("2015-2016");
+        mYear.add("2014-2015");
+        mYear.add("2013-2014");
+        mYear.add("2012-2013");
+        mYear.add("2011-2012");
+        mYear.add("2010-2011");
+
     }
 
     private void setAdapter() {

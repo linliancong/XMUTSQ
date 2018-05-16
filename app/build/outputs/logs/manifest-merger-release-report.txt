@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
-INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
-INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
-INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:2:1-11:12
 MERGED from [cn.leancloud.android:avoscloud-push:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-push-v4.6.4.aar\b29f4cc22873b7fefb200351e49fe54b\AndroidManifest.xml:2:1-11:12
@@ -20,25 +20,25 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administr
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:17:1-30:12
-INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
-INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
-INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
 	package
 		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
 		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-196:12
 		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:5:5-177:19
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:5:5-184:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:9:5-20
@@ -205,152 +205,162 @@ action#android.intent.action.ADDGRADE
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:93:17-73
 	android:name
 		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:93:25-70
-activity#com.example.administrator.xmutsq.LostAndFoundInfo
+activity#com.example.administrator.xmutsq.LostAndFoundS
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:98:9-104:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:98:19-51
-intent-filter#android.intent.action.LOSTANDFOUNDINFO+android.intent.category.DEFAULT
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:98:19-48
+intent-filter#android.intent.action.LOSTANDFOUNDS+android.intent.category.DEFAULT
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:99:13-103:29
-action#android.intent.action.LOSTANDFOUNDINFO
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:100:17-81
+action#android.intent.action.LOSTANDFOUNDS
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:100:17-78
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:100:25-78
-activity#com.example.administrator.xmutsq.AddLost
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:100:25-75
+activity#com.example.administrator.xmutsq.LostAndFoundInfo
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:105:9-111:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:105:19-42
-intent-filter#android.intent.action.ADDLOST+android.intent.category.DEFAULT
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:105:19-51
+intent-filter#android.intent.action.LOSTANDFOUNDINFO+android.intent.category.DEFAULT
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:106:13-110:29
-action#android.intent.action.ADDLOST
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:107:17-72
+action#android.intent.action.LOSTANDFOUNDINFO
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:107:17-81
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:107:25-69
-activity#com.example.administrator.xmutsq.AlterPWD
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:107:25-78
+activity#com.example.administrator.xmutsq.AddLost
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:112:9-118:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:112:19-43
-intent-filter#android.intent.action.ALTERPWD+android.intent.category.DEFAULT
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:112:19-42
+intent-filter#android.intent.action.ADDLOST+android.intent.category.DEFAULT
 ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:113:13-117:29
+action#android.intent.action.ADDLOST
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:114:17-72
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:114:25-69
+activity#com.example.administrator.xmutsq.AlterPWD
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:119:9-125:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:119:19-43
+intent-filter#android.intent.action.ALTERPWD+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:120:13-124:29
 action#android.intent.action.ALTERPWD
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:114:17-73
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:121:17-73
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:114:25-70
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:121:25-70
 provider#android.support.v4.content.FileProvider
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:120:9-128:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:127:9-135:20
 	android:grantUriPermissions
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:124:13-47
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:131:13-47
 	android:authorities
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:122:13-67
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:129:13-67
 	android:exported
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:123:13-37
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:130:13-37
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:121:13-67
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:128:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:125:13-127:53
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:132:13-134:53
 	android:resource
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:127:17-50
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:134:17-50
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:126:17-67
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:133:17-67
 receiver#com.example.administrator.xmutsq.PersonalCenter$MyBroad
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:133:9-137:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:140:9-144:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:133:19-57
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:140:19-57
 intent-filter#com.example.administrator.MYBROAD
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:134:13-136:29
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:141:13-143:29
 action#com.example.administrator.MYBROAD
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:135:17-75
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:142:17-75
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:135:25-73
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:142:25-73
 receiver#com.example.administrator.xmutsq.MainActivity$MyBroad
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:138:9-142:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:145:9-149:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:138:19-55
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:145:19-55
 intent-filter#com.example.administrator.MYBROAD2
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:139:13-141:29
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:146:13-148:29
 action#com.example.administrator.MYBROAD2
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:140:17-76
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:147:17-76
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:140:25-74
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:147:25-74
 receiver#com.example.administrator.xmutsq.NoticeH$MyBroad
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:143:9-147:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:150:9-154:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:143:19-50
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:150:19-50
 intent-filter#com.example.administrator.MYBROAD3
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:144:13-146:29
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:151:13-153:29
 action#com.example.administrator.MYBROAD3
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:145:17-76
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:152:17-76
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:145:25-74
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:152:25-74
 receiver#com.example.administrator.xmutsq.BookH$MyBroad
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:148:9-152:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:155:9-159:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:148:19-48
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:155:19-48
 intent-filter#com.example.administrator.MYBROAD4
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:149:13-151:29
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:156:13-158:29
 action#com.example.administrator.MYBROAD4
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:150:17-76
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:157:17-76
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:150:25-74
-receiver#com.example.administrator.xmutsq.LostAndFoundH$MyBroad
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:153:9-157:20
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:157:25-74
+receiver#com.example.administrator.xmutsq.LostAndFoundS$MyBroad
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:160:9-164:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:153:19-56
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:160:19-56
 intent-filter#com.example.administrator.MYBROAD5
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:154:13-156:29
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:161:13-163:29
 action#com.example.administrator.MYBROAD5
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:155:17-76
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:162:17-76
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:155:25-74
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:162:25-74
 service#com.avos.avoscloud.PushService
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:162:9-65
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:169:9-65
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:162:18-63
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:169:18-63
 receiver#com.avos.avoscloud.AVBroadcastReceiver
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:163:9-169:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:170:9-176:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:163:19-72
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:170:19-72
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:164:13-168:29
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:171:13-175:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:165:17-78
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:172:17-78
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:165:25-76
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:172:25-76
 action#android.intent.action.USER_PRESENT
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:166:17-76
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:173:17-76
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:166:25-74
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:173:25-74
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:167:17-79
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:174:17-79
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:167:25-76
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:174:25-76
 activity#com.avos.avoscloud.feedback.ThreadActivity
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:173:9-175:20
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:180:9-182:20
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:174:13-70
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:181:13-70
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:180:5-81
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:187:5-81
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:180:22-78
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:187:22-78
 uses-permission#android.permission.INTERNET
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:181:5-66
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:188:5-66
 MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:11:5-67
 MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:181:22-64
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:188:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:182:5-79
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:189:5-79
 MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:14:5-79
 MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:182:22-76
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:189:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:183:5-75
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:190:5-75
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:183:22-72
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:190:22-72
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:184:5-76
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:191:5-76
 	android:name
-		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:184:22-73
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:191:22-73
 uses-sdk
 INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml

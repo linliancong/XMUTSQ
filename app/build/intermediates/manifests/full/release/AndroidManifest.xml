@@ -108,6 +108,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.administrator.xmutsq.LostAndFoundS" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOSTANDFOUNDS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.administrator.xmutsq.LostAndFoundInfo" >
             <intent-filter>
                 <action android:name="android.intent.action.LOSTANDFOUNDINFO" />
@@ -161,7 +168,7 @@
                 <action android:name="com.example.administrator.MYBROAD4" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.example.administrator.xmutsq.LostAndFoundH$MyBroad" >
+        <receiver android:name="com.example.administrator.xmutsq.LostAndFoundS$MyBroad" >
             <intent-filter>
                 <action android:name="com.example.administrator.MYBROAD5" />
             </intent-filter>

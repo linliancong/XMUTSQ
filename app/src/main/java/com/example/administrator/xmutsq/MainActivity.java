@@ -348,24 +348,42 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId){
             case R.id.rb_notice:
+                if(sp.getIsLogin()){
+                    readBitmap();
+                    if(sp.getRole().equals("0")){
+                        edit.setVisibility(View.VISIBLE);
+                    }else {
+                        edit.setVisibility(View.GONE);
+                    }
+                }
                 setSelected();
                 view_notice.setSelected(true);
                 vpager.setCurrentItem(PAG_ONE);
                 page=PAG_ONE;
                 break;
             case R.id.rb_book:
+                if(sp.getIsLogin()){
+                    readBitmap();
+                    if(sp.getRole().equals("0")){
+                        edit.setVisibility(View.VISIBLE);
+                    }else {
+                        edit.setVisibility(View.GONE);
+                    }
+                }
                 setSelected();
                 view_book.setSelected(true);
                 vpager.setCurrentItem(PAG_TWO);
                 page=PAG_TWO;
                 break;
             case R.id.rb_grade:
+                edit.setVisibility(View.GONE);
                 setSelected();
                 view_grade.setSelected(true);
                 vpager.setCurrentItem(PAG_THREE);
                 page=PAG_THREE;
                 break;
             case R.id.rb_lost:
+                edit.setVisibility(View.VISIBLE);
                 setSelected();
                 view_lost.setSelected(true);
                 vpager.setCurrentItem(PAG_FOUR);

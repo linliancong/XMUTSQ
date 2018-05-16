@@ -1272,6 +1272,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2a6a5fcbca7d820cb35027346122b6d8\\res\\color\\abc_tint_default.xml"
     },
     {
+        "merged": "F:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\res\\merged\\debug\\layout_home_lost_more.xml.flat",
+        "source": "F:\\Android\\Develop\\XMUTSQ\\app\\src\\main\\res\\layout\\home_lost_more.xml"
+    },
+    {
         "merged": "F:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\res\\merged\\debug\\drawable_send.xml.flat",
         "source": "F:\\Android\\Develop\\XMUTSQ\\app\\src\\main\\res\\drawable\\send.xml"
     },

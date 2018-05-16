@@ -1,55 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
 
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="#00000000"
-        android:listSelector="#00000000"
-        android:scrollbars="none"
-        android:visibility="visible"
-        />
-
-    <LinearLayout
-        android:id="@+id/visible"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:visibility="gone"
+        android:text="失物状态"
+        android:textColor="@color/light_blue2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/cp_ly_no"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_pressed"
+        android:clickable="true"
+        android:focusable="true"
         >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/feedback"
-            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="暂时没有失物招领"
-            />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/sche_rl"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background"
-        android:visibility="gone"
-        >
-        <ImageView
-            android:id="@+id/sche_img"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/anima_sche"
+            android:text="未认领失物"
+            android:textSize="16sp"
+            android:textColor="@color/black"
             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cp_ly_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_pressed"
+        android:clickable="true"
+        android:focusable="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="已认领失物"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right"
+            android:layout_centerInParent="true"
+            />
+
+
     </RelativeLayout>
 
-</RelativeLayout>
+</LinearLayout>

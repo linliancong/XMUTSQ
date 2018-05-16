@@ -1,10 +1,12 @@
 package com.example.administrator.xmutsq;
 
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
@@ -90,7 +92,7 @@ public class LostAndFoundInfo extends StatusBarUT implements View.OnClickListene
         intent=getIntent();
         Bundle bd=intent.getExtras();
         lost =new ArrayList<>();
-        lost = (ArrayList<Lost>) bd.getSerializable("lost");
+        lost = (ArrayList<Lost>) bd.getSerializable("home_lost");
         lostID=lost.get(0).getLostID();
         phone=lost.get(0).getPhone();
         name=lost.get(0).getName();
@@ -159,6 +161,11 @@ public class LostAndFoundInfo extends StatusBarUT implements View.OnClickListene
             public void onClick(View v) {
                 //handler.sendEmptyMessage(0x0001);
                 alert.dismiss();
+                if(Build.VERSION.SDK_INT<Build.VERSION_CODES.O) {
+                    sendBroadcast(new Intent("com.example.administrator.MYBROAD5"));
+                }else {
+                    sendBroadcast(new Intent("com.example.administrator.MYBROAD5").setComponent(new ComponentName("com.example.administrator.xmutsq", "com.example.administrator.xmutsq.LostAndFoundS$MyBroad")));
+                }
                 finish();
             }
         });
