@@ -91,47 +91,51 @@ public class BookH extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if(view==null){
-            sp=new SharedPUT(context);
             view=inflater.inflate(R.layout.home_book,container,false);
-            list=view.findViewById(R.id.list);
-            visible=view.findViewById(R.id.visible);
-            search=view.findViewById(R.id.search);
-            bookname=view.findViewById(R.id.bookname);
-
-            search.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(bookname.getText().toString().length()==0){
-                        getData();
-                    }else {
-                        getSearchData();
-                    }
-                }
-            });
-
-            //广播更新
-            broad=new PersonalCenter.MyBroad();
-            IntentFilter filter=new IntentFilter();
-            filter.addAction("com.example.administrator.MYBROAD4");
-            getActivity().registerReceiver(broad,filter);
-
-            new Thread(){
-                @Override
-                public void run() {
-                    while (true)
-                    {
-                        if(state) {
-                            state=false;
-                            handler.sendEmptyMessage(0x003);
-                        }
-                    }
-                }
-            }.start();
+            init();
 
 
         }
         getData();
         return view;
+    }
+
+    private void init() {
+        sp=new SharedPUT(context);
+        list=view.findViewById(R.id.list);
+        visible=view.findViewById(R.id.visible);
+        search=view.findViewById(R.id.search);
+        bookname=view.findViewById(R.id.bookname);
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(bookname.getText().toString().length()==0){
+                    getData();
+                }else {
+                    getSearchData();
+                }
+            }
+        });
+
+        //广播更新
+        broad=new PersonalCenter.MyBroad();
+        IntentFilter filter=new IntentFilter();
+        filter.addAction("com.example.administrator.MYBROAD4");
+        getActivity().registerReceiver(broad,filter);
+
+        new Thread(){
+            @Override
+            public void run() {
+                while (true)
+                {
+                    if(state) {
+                        state=false;
+                        handler.sendEmptyMessage(0x003);
+                    }
+                }
+            }
+        }.start();
     }
 
     /**

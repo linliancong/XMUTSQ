@@ -8,7 +8,7 @@ public class SharedPUT {
     private SharedPreferences.Editor editor;
 
     public SharedPUT(Context context){
-        sp=context.getSharedPreferences("SportSP",context.MODE_PRIVATE);
+        sp=context.getSharedPreferences("MYSP",context.MODE_PRIVATE);
         editor=sp.edit();
     }
 

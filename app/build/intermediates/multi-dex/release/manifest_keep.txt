@@ -1,0 +1,3 @@
+# Referenced at F:\Android\Develop\XMUTSQ\app\build\intermediates\manifests\full\release\AndroidManifest.xml:19
+-keep class com.example.administrator.xmutsq.MyLeanCloudApp { <init>(...); }
+

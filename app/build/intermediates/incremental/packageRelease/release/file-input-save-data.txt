@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Wed May 16 10:23:03 CST 2018
+1.base=F\:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\transforms\\dex\\release\\0
+2.path=lib/armeabi/libweibosdkcore.so
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=F\:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\transforms\\mergeJniLibs\\release\\0
+3.set=NATIVE_RESOURCE
+2.set=NATIVE_RESOURCE
+1.baseType=DIRECTORY
+3.path=lib/x86/libweibosdkcore.so
+count=4
+1.set=DEX
+0.path=lib/mips/libweibosdkcore.so
+3.base=F\:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\transforms\\mergeJniLibs\\release\\0
+0.set=NATIVE_RESOURCE
+0.base=F\:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\transforms\\mergeJniLibs\\release\\0
+2.baseType=DIRECTORY
+1.path=classes.dex

@@ -258,35 +258,20 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         });*/
 
         /**
-         * 表名：Course（课程表）
-         * 以下为各个字段
-         * CourseName：课程名称
-         * Credits：学分
-         * Time：学时
-         * Remark：备注
-         * */
-        /*testObject = new AVObject("Course");
-        testObject.put("CourseName","");
-        testObject.put("Credits","");
-        testObject.put("Time", "");
-        testObject.put("Remark","");
-        testObject.saveInBackground(new SaveCallback() {
-            @Override
-            public void done(AVException e) {
-            }
-        });*/
-
-        /**
          * 表名：Grade（成绩表）
          * 以下为各个字段
          * UserID：用户ID
-         * CourseID：课程ID
+         * CourseName：课程名称
+         * Credits：学分
+         * Time：学时
          * GradePoint：绩点
          * Grade：成绩
          * Remark：备注
          * */
         /*testObject = new AVObject("Grade");
-        testObject.put("CourseID","");
+        testObject.put("CourseName","");
+        testObject.put("Credits","");
+        testObject.put("Time", "");
         testObject.put("UserID", "");
         testObject.put("GradePoint","");
         testObject.put("Grade", "");
@@ -300,13 +285,15 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         /**
          * 表名：Lost（失物表）
          * 以下为各个字段
-         * LostName：物品名称
+         * LostName：物品标题
          * Content：详细内容
          * Time：登记时间
          * Image：物品图片
          * UserID：发布的用户ID
          * UserName：发布用户名
-         * State：物品状态（1、发布中，2、已认领）
+         * UserImageURL: 发布用户头像
+         * Phone:发布用户的联系电话
+         * State：物品状态（1、待认领，2、已认领）
          * ToUserID：认领的用户ID
          * ToUserName：认领的用户名
          * */
@@ -317,6 +304,8 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
         testObject.put("Image", "");
         testObject.put("UserID","");
         testObject.put("UserName","");
+        testObject.put("UserImageURL","");
+        testObject.put("Phone","");
         testObject.put("State","");
         testObject.put("ToUserID","");
         testObject.put("ToUserName","");
@@ -482,12 +471,12 @@ public class MainActivity extends StatusBarUT implements RadioGroup.OnCheckedCha
                         break;
                     //成绩查询
                     case PAG_THREE:
-                        Intent it3=new Intent(context,PersonalCenter.class);
-                        startActivity(it3);
+                        /*Intent it3=new Intent(context,PersonalCenter.class);
+                        startActivity(it3);*/
                         break;
                     //失物招领
                     case PAG_FOUR:
-                        Intent it4=new Intent(context,PersonalCenter.class);
+                        Intent it4=new Intent(context,AddLost.class);
                         startActivity(it4);
                         break;
                 }

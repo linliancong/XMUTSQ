@@ -69,31 +69,35 @@ public class NoticeH extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if(view==null){
             view=inflater.inflate(R.layout.home_notice,container, false);
-            listV =view.findViewById(R.id.list);
-            visible=view.findViewById(R.id.visible);
-
-            //广播更新
-            broad=new PersonalCenter.MyBroad();
-            IntentFilter filter=new IntentFilter();
-            filter.addAction("com.example.administrator.MYBROAD3");
-            getActivity().registerReceiver(broad,filter);
-
-            new Thread(){
-                @Override
-                public void run() {
-                    while (true)
-                    {
-                        if(state) {
-                            state=false;
-                            handler.sendEmptyMessage(0x003);
-                        }
-                    }
-                }
-            }.start();
+            init();
 
         }
         getData();
         return view;
+    }
+
+    private void init() {
+        listV =view.findViewById(R.id.list);
+        visible=view.findViewById(R.id.visible);
+
+        //广播更新
+        broad=new PersonalCenter.MyBroad();
+        IntentFilter filter=new IntentFilter();
+        filter.addAction("com.example.administrator.MYBROAD3");
+        getActivity().registerReceiver(broad,filter);
+
+        new Thread(){
+            @Override
+            public void run() {
+                while (true)
+                {
+                    if(state) {
+                        state=false;
+                        handler.sendEmptyMessage(0x003);
+                    }
+                }
+            }
+        }.start();
     }
 
     public void  getData(){

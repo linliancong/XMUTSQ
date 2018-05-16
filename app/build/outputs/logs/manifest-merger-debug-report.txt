@@ -1,0 +1,441 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:2:1-11:12
+MERGED from [cn.leancloud.android:avoscloud-push:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-push-v4.6.4.aar\b29f4cc22873b7fefb200351e49fe54b\AndroidManifest.xml:2:1-11:12
+MERGED from [cn.leancloud.android:avoscloud-feedback:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-feedback-v4.6.4.aar\853895555b6c54485c36dc679bef7ae9\AndroidManifest.xml:2:1-11:12
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:2:1-16:12
+MERGED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4dce7c88fb91640d44525c5c69413911\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:17:1-30:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+	package
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:3:5-47
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:1-189:12
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:5:5-177:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:9:5-20
+MERGED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:11:5-14:19
+MERGED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:11:9-40
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:12:9-39
+activity#com.example.administrator.xmutsq.MainActivity
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:14:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.administrator.xmutsq.PersonalCenter
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:21:19-49
+intent-filter#android.intent.action.PERSONALCENTER+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.PERSONALCENTER
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:23:25-76
+category#android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:25:27-73
+activity#com.example.administrator.xmutsq.Login
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:28:9-34:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:28:19-40
+intent-filter#android.intent.action.LOGIN+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:29:13-33:29
+action#android.intent.action.LOGIN
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:30:17-70
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:30:25-67
+activity#com.example.administrator.xmutsq.ResetPasswd
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:35:9-41:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:35:19-46
+intent-filter#android.intent.action.RESETPASSWD+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.RESETPASSWD
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:37:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:37:25-73
+activity#com.example.administrator.xmutsq.Register
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:42:9-48:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:42:19-43
+intent-filter#android.intent.action.REGISTER+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:43:13-47:29
+action#android.intent.action.REGISTER
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:44:17-73
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:44:25-70
+activity#com.example.administrator.xmutsq.UpdateInfo
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:49:9-55:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:49:19-45
+intent-filter#android.intent.action.UPDATE+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:50:13-54:29
+action#android.intent.action.UPDATE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:51:17-71
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:51:25-68
+activity#com.example.administrator.xmutsq.NoticeInfo
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:56:9-62:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:56:19-45
+intent-filter#android.intent.action.NOTICEINFO+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:57:13-61:29
+action#android.intent.action.NOTICEINFO
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:58:17-75
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:58:25-72
+activity#com.example.administrator.xmutsq.AddNotice
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:63:9-69:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:63:19-44
+intent-filter#android.intent.action.ADDNOTICE+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:64:13-68:29
+action#android.intent.action.ADDNOTICE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:65:17-74
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:65:25-71
+activity#com.example.administrator.xmutsq.BookInfo
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:70:9-76:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:70:19-43
+intent-filter#android.intent.action.BOOKINFO+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:71:13-75:29
+action#android.intent.action.BOOKINFO
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:72:17-73
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:72:25-70
+activity#com.example.administrator.xmutsq.AddBook
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:77:9-83:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:77:19-42
+intent-filter#android.intent.action.ADDBOOK+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:78:13-82:29
+action#android.intent.action.ADDBOOK
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:79:17-72
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:79:25-69
+activity#com.example.administrator.xmutsq.GradeInfo
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:84:9-90:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:84:19-44
+intent-filter#android.intent.action.GRADEINFO+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:85:13-89:29
+action#android.intent.action.GRADEINFO
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:86:17-74
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:86:25-71
+activity#com.example.administrator.xmutsq.AddGrade
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:91:9-97:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:91:19-43
+intent-filter#android.intent.action.ADDGRADE+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:92:13-96:29
+action#android.intent.action.ADDGRADE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:93:17-73
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:93:25-70
+activity#com.example.administrator.xmutsq.LostAndFoundInfo
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:98:9-104:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:98:19-51
+intent-filter#android.intent.action.LOSTANDFOUNDINFO+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:99:13-103:29
+action#android.intent.action.LOSTANDFOUNDINFO
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:100:17-81
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:100:25-78
+activity#com.example.administrator.xmutsq.AddLost
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:105:9-111:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:105:19-42
+intent-filter#android.intent.action.ADDLOST+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:106:13-110:29
+action#android.intent.action.ADDLOST
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:107:17-72
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:107:25-69
+activity#com.example.administrator.xmutsq.AlterPWD
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:112:9-118:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:112:19-43
+intent-filter#android.intent.action.ALTERPWD+android.intent.category.DEFAULT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:113:13-117:29
+action#android.intent.action.ALTERPWD
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:114:17-73
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:114:25-70
+provider#android.support.v4.content.FileProvider
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:120:9-128:20
+	android:grantUriPermissions
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:124:13-47
+	android:authorities
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:122:13-67
+	android:exported
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:123:13-37
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:121:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:125:13-127:53
+	android:resource
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:127:17-50
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:126:17-67
+receiver#com.example.administrator.xmutsq.PersonalCenter$MyBroad
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:133:9-137:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:133:19-57
+intent-filter#com.example.administrator.MYBROAD
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:134:13-136:29
+action#com.example.administrator.MYBROAD
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:135:17-75
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:135:25-73
+receiver#com.example.administrator.xmutsq.MainActivity$MyBroad
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:138:9-142:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:138:19-55
+intent-filter#com.example.administrator.MYBROAD2
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:139:13-141:29
+action#com.example.administrator.MYBROAD2
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:140:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:140:25-74
+receiver#com.example.administrator.xmutsq.NoticeH$MyBroad
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:143:9-147:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:143:19-50
+intent-filter#com.example.administrator.MYBROAD3
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:144:13-146:29
+action#com.example.administrator.MYBROAD3
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:145:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:145:25-74
+receiver#com.example.administrator.xmutsq.BookH$MyBroad
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:148:9-152:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:148:19-48
+intent-filter#com.example.administrator.MYBROAD4
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:149:13-151:29
+action#com.example.administrator.MYBROAD4
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:150:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:150:25-74
+receiver#com.example.administrator.xmutsq.LostAndFoundH$MyBroad
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:153:9-157:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:153:19-56
+intent-filter#com.example.administrator.MYBROAD5
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:154:13-156:29
+action#com.example.administrator.MYBROAD5
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:155:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:155:25-74
+service#com.avos.avoscloud.PushService
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:162:9-65
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:162:18-63
+receiver#com.avos.avoscloud.AVBroadcastReceiver
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:163:9-169:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:163:19-72
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:164:13-168:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:165:17-78
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:165:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:166:17-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:166:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:167:17-79
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:167:25-76
+activity#com.avos.avoscloud.feedback.ThreadActivity
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:173:9-175:20
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:174:13-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:180:5-81
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:180:22-78
+uses-permission#android.permission.INTERNET
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:181:5-66
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:11:5-67
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:181:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:182:5-79
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:14:5-79
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:182:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:183:5-75
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:183:22-72
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:184:5-76
+	android:name
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml:184:22-73
+uses-sdk
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\AndroidManifest.xml:5:5-7:41
+MERGED from [cn.leancloud.android:avoscloud-push:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-push-v4.6.4.aar\b29f4cc22873b7fefb200351e49fe54b\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-push:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-push-v4.6.4.aar\b29f4cc22873b7fefb200351e49fe54b\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-feedback:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-feedback-v4.6.4.aar\853895555b6c54485c36dc679bef7ae9\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-feedback:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-feedback-v4.6.4.aar\853895555b6c54485c36dc679bef7ae9\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4dce7c88fb91640d44525c5c69413911\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4dce7c88fb91640d44525c5c69413911\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:20:5-22:41
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Develop\XMUTSQ\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\AndroidManifest.xml:27:13-51
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from [cn.leancloud.android:avoscloud-sns:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\AndroidManifest.xml:13:22-63
+activity#com.avos.avoscloud.search.SearchActivity
+ADDED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:12:9-13:20
+	android:name
+		ADDED from [cn.leancloud.android:avoscloud-search:v4.6.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\AndroidManifest.xml:12:19-74
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\AndroidManifest.xml:26:13-58

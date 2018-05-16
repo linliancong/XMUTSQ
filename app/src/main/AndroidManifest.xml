@@ -81,6 +81,51 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".GradeInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.GRADEINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddGrade">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDGRADE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LostAndFoundInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.LOSTANDFOUNDINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddLost">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDLOST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AlterPWD">
+            <intent-filter>
+                <action android:name="android.intent.action.ALTERPWD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.administrator.xmutsq"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
 
 
 
@@ -103,6 +148,11 @@
         <receiver android:name=".BookH$MyBroad">
             <intent-filter>
                 <action android:name="com.example.administrator.MYBROAD4"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".LostAndFoundH$MyBroad">
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD5"/>
             </intent-filter>
         </receiver>
 

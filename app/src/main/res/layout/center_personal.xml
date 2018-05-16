@@ -333,6 +333,40 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/cp_ly_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_pressed"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <TextView
+                android:id="@+id/cp_txt_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="修改密码"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/cp_img_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/cp_ly_tc"
             android:layout_width="wrap_content"
             android:layout_height="46dp"

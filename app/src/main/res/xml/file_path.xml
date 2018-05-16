@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path
+        name="XMUTSQ_files"
+        path="." />
+    <root-path
+        name="XMUTSQ_root"
+        path="." />
+    <cache-path
+        name="XMUTSQ_catch"
+        path="." />
+    <external-path
+        name="XMUTSQ_epath"
+        path="." />
+    <external-files-path
+        name="XMUTSQ_efpath"
+        path="." />
+    <external-cache-path
+        name="XMUTSQ_ecpath"
+        path="." />
+
+</paths>

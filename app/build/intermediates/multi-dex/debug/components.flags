@@ -1,0 +1,70 @@
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2a6a5fcbca7d820cb35027346122b6d8\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\31e43777259edd10a3c24f163f3ffd78\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-push-v4.6.4.aar\b29f4cc22873b7fefb200351e49fe54b\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\cn.leancloud.android\avoscloud-statistics\v4.6.4\e443c4128b81daf7be05c70d9063229d52e5fd75\avoscloud-statistics-v4.6.4.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\cn.leancloud.android\avoscloud-sdk\v4.6.4\794761923b276db14c9630afabf551faa82d5915\avoscloud-sdk-v4.6.4.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-feedback-v4.6.4.aar\853895555b6c54485c36dc679bef7ae9\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-sns-v4.6.4.aar\b3b029ba5ad67c314a8d645e4b6bc160\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\cn.leancloud.android\qq-sdk\1.6.1-leancloud\896145203364b9e1d055cb81ac127bab139ad91d\qq-sdk-1.6.1-leancloud.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\avoscloud-search-v4.6.4.aar\8d4c2f519add3be6220bd37bfdd8e91d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4dce7c88fb91640d44525c5c69413911\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2517788d8137ad3a7f7ffbf389cfa08f\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\97746db80a465fcf7d3af9ca3dcd192a\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b7182ad0a40f882156df161a444ec5d7\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9a7ee678998517d20e3dbf12d8c1cc01\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\7c0d4f56b94aad0acde4a15216b0623f\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\714135a4b68e61f21a17e61af53f820a\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\768d6c5c4bf5039e37944d6f4731a1e2\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f243d299e7951d2f761f12b2eb0be63d\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar'(**.class)
+-injars 'E:\AndroidTool\android-sdk_r24.4.1-windows\android-sdk-windows\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.8.1\4d060ca3190df0eda4dc13415532a12e15ca5f11\okhttp-3.8.1.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.alibaba\fastjson\1.2.37\748cbf698e77f2df5061500a79a22e1f479dfec2\fastjson-1.2.37.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\cn.leancloud.android\Java-WebSocket\1.3.2-leancloud\169fd461930335df8099bcbac99c0f206912ced1\Java-WebSocket-1.3.2-leancloud.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.4.0\b32aba0cbe737a4ca953f71688725972e3ee927c\protobuf-java-3.4.0.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\cbab6fa246bc9a8b9f8a2cae024c0505\jars\classes.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar'(**.class)
+-injars 'C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar'(**.class)
+-injars 'F:\Android\Develop\XMUTSQ\app\build\intermediates\classes\debug'(**.class)
+-outjars 'F:\Android\Develop\XMUTSQ\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'E:\AndroidTool\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\26.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'F:\Android\Develop\XMUTSQ\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+# Referenced at F:\Android\Develop\XMUTSQ\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:19
+-keep class com.example.administrator.xmutsq.MyLeanCloudApp {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

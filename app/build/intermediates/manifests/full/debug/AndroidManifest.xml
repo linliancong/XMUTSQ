@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.xmutsq"
+    android:versionCode="1"
+    android:versionName="1.0" > <!-- 基础模块 END -->
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="26" />
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.example.administrator.xmutsq.MyLeanCloudApp"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoAction" >
+        <activity android:name="com.example.administrator.xmutsq.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.PersonalCenter" >
+            <intent-filter>
+                <action android:name="android.intent.action.PERSONALCENTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.ResetPasswd" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESETPASSWD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.Register" >
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.UpdateInfo" >
+            <intent-filter>
+                <action android:name="android.intent.action.UPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.NoticeInfo" >
+            <intent-filter>
+                <action android:name="android.intent.action.NOTICEINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.AddNotice" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADDNOTICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.BookInfo" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOKINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.AddBook" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADDBOOK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.GradeInfo" >
+            <intent-filter>
+                <action android:name="android.intent.action.GRADEINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.AddGrade" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADDGRADE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.LostAndFoundInfo" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOSTANDFOUNDINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.AddLost" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADDLOST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.xmutsq.AlterPWD" >
+            <intent-filter>
+                <action android:name="android.intent.action.ALTERPWD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.administrator.xmutsq"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <!-- 更新广播 -->
+        <receiver android:name="com.example.administrator.xmutsq.PersonalCenter$MyBroad" >
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.administrator.xmutsq.MainActivity$MyBroad" >
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.administrator.xmutsq.NoticeH$MyBroad" >
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD3" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.administrator.xmutsq.BookH$MyBroad" >
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD4" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.administrator.xmutsq.LostAndFoundH$MyBroad" >
+            <intent-filter>
+                <action android:name="com.example.administrator.MYBROAD5" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 实时通信模块、推送（均需要加入以下声明） START -->
+        <!-- 实时通信模块、推送都要使用 PushService -->
+        <service android:name="com.avos.avoscloud.PushService" />
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 实时通信模块、推送 END -->
+
+
+        <!-- 反馈组件（需要加入以下声明）START -->
+        <activity android:name="com.avos.avoscloud.feedback.ThreadActivity" >
+        </activity>
+        <!-- 反馈组件 END -->
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity android:name="com.avos.avoscloud.search.SearchActivity" >
+        </activity>
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

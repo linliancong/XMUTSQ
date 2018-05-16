@@ -61,6 +61,7 @@ public class PersonalCenter extends StatusBarUT implements View.OnClickListener{
     private RelativeLayout sj;
     private RelativeLayout qq;
     private RelativeLayout tc;
+    private RelativeLayout pwd;
 
     private ImageView img;
     private TextView tx_txt;
@@ -142,6 +143,7 @@ public class PersonalCenter extends StatusBarUT implements View.OnClickListener{
         sj=findViewById(R.id.cp_ly_sj);
         qq=findViewById(R.id.cp_ly_qq);
         tc=findViewById(R.id.cp_ly_tc);
+        pwd=findViewById(R.id.cp_ly_pwd);
 
         img=findViewById(R.id.cp_img_tx);
         tx_txt=findViewById(R.id.cp_txt_tx);
@@ -160,6 +162,7 @@ public class PersonalCenter extends StatusBarUT implements View.OnClickListener{
         sj.setOnClickListener(this);
         qq.setOnClickListener(this);
         tc.setOnClickListener(this);
+        pwd.setOnClickListener(this);
         back.setOnClickListener(this);
     }
 
@@ -258,6 +261,11 @@ public class PersonalCenter extends StatusBarUT implements View.OnClickListener{
                 }
                 break;
             case R.id.cp_btn_back:
+                finish();
+                break;
+            case R.id.cp_ly_pwd:
+                Intent intent=new Intent(context,AlterPWD.class);
+                startActivity(intent);
                 finish();
                 break;
         }

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class TimeUT {
     private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
-    private static SimpleDateFormat dateFormat2 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    private static SimpleDateFormat dateFormat2 = new SimpleDateFormat("yyyyMMddHHmmss");
     private static SimpleDateFormat dateFormat3 = new SimpleDateFormat("yyyy年MM月");
     private static SimpleDateFormat dateFormat4 = new SimpleDateFormat("yyyy-MM-dd");
     private static Calendar mCalendar = Calendar.getInstance();
@@ -120,7 +120,7 @@ public class TimeUT {
     /**
      * 获取当前的日期
      *
-     * @return yyyy/MM/dd/ HH:mm:ss
+     * @return yyyyMMddHHmmss
      */
     public static String getCurrentDate2() {
         mCalendar = Calendar.getInstance();
