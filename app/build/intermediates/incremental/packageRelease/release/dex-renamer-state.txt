@@ -1,4 +1,4 @@
-#Wed May 16 14:43:03 CST 2018
+#Thu May 17 10:05:44 CST 2018
 base.0=F\:\\Android\\Develop\\XMUTSQ\\app\\build\\intermediates\\transforms\\dex\\release\\0
 path.0=classes.dex
 renamed.0=classes.dex

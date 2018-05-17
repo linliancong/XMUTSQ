@@ -165,20 +165,20 @@
                 {
                     "source": "F:\\Android\\Develop\\XMUTSQ\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "3,30,10,18",
+                        "startLines": "3,29,10,18",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "57,1310,384,763",
-                        "endLines": "8,32,16,28",
+                        "startOffsets": "57,1258,384,763",
+                        "endLines": "8,31,16,27",
                         "endColumns": "12,12,12,12",
-                        "endOffsets": "376,1443,755,1302"
+                        "endOffsets": "376,1391,755,1250"
                     },
                     "to": {
                         "startLines": "568,1606,1609,1994",
                         "startColumns": "4,4,4,4",
                         "startOffsets": "50958,116934,117070,147099",
-                        "endLines": "573,1608,1615,2004",
+                        "endLines": "573,1608,1615,2003",
                         "endColumns": "12,12,12,12",
-                        "endOffsets": "51272,117065,117435,147628"
+                        "endOffsets": "51272,117065,117435,147577"
                     }
                 }
             ]

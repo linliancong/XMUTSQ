@@ -71,10 +71,6 @@ public class GradeH extends Fragment implements View.OnClickListener{
         mYear.add("2016-2017");
         mYear.add("2015-2016");
         mYear.add("2014-2015");
-        mYear.add("2013-2014");
-        mYear.add("2012-2013");
-        mYear.add("2011-2012");
-        mYear.add("2010-2011");
 
     }
 

@@ -18,24 +18,28 @@
             android:id="@+id/rb_notice"
             style="@style/menu_item"
             android:text="校园公告"
+            android:drawableTop="@drawable/notice"
             />
 
         <RadioButton
             android:id="@+id/rb_book"
             style="@style/menu_item"
             android:text="图书信息"
+            android:drawableTop="@drawable/book"
             />
 
         <RadioButton
             android:id="@+id/rb_grade"
             style="@style/menu_item"
             android:text="成绩查询"
+            android:drawableTop="@drawable/grade"
             />
 
         <RadioButton
             android:id="@+id/rb_lost"
             style="@style/menu_item"
             android:text="失物招领"
+            android:drawableTop="@drawable/lost"
             />
     </RadioGroup>
 

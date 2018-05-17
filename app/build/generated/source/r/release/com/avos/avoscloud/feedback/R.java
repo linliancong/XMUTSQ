@@ -535,18 +535,18 @@ public final class R {
         public static final int avoscloud_feedback_notification = 0x7f060058;
         public static final int avoscloud_feedback_thread_actionbar_back = 0x7f060059;
         public static final int avoscloud_feedback_user_reply_background = 0x7f06005a;
-        public static final int notification_action_background = 0x7f060076;
-        public static final int notification_bg = 0x7f060077;
-        public static final int notification_bg_low = 0x7f060078;
-        public static final int notification_bg_low_normal = 0x7f060079;
-        public static final int notification_bg_low_pressed = 0x7f06007a;
-        public static final int notification_bg_normal = 0x7f06007b;
-        public static final int notification_bg_normal_pressed = 0x7f06007c;
-        public static final int notification_icon_background = 0x7f06007d;
-        public static final int notification_template_icon_bg = 0x7f06007e;
-        public static final int notification_template_icon_low_bg = 0x7f06007f;
-        public static final int notification_tile_bg = 0x7f060080;
-        public static final int notify_panel_notification_icon_bg = 0x7f060081;
+        public static final int notification_action_background = 0x7f06007a;
+        public static final int notification_bg = 0x7f06007b;
+        public static final int notification_bg_low = 0x7f06007c;
+        public static final int notification_bg_low_normal = 0x7f06007d;
+        public static final int notification_bg_low_pressed = 0x7f06007e;
+        public static final int notification_bg_normal = 0x7f06007f;
+        public static final int notification_bg_normal_pressed = 0x7f060080;
+        public static final int notification_icon_background = 0x7f060081;
+        public static final int notification_template_icon_bg = 0x7f060082;
+        public static final int notification_template_icon_low_bg = 0x7f060083;
+        public static final int notification_tile_bg = 0x7f060084;
+        public static final int notify_panel_notification_icon_bg = 0x7f060085;
     }
     public static final class id {
         public static final int action0 = 0x7f070006;

@@ -242,8 +242,6 @@ public class LostAndFoundS extends StatusBarUT {
         if(file.exists()){
             //存储--->内存
             Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
-
-
             return bitmap;
         }
         return null;
